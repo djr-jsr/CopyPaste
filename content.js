@@ -12,5 +12,8 @@
 	document.addEventListener("cut", function (event) {
 	    event.stopPropagation();
 	}, true);
+	document.addEventListener("contextmenu", function(event){
+        event.stopPropagation();
+	}, true);
   // }
 // );

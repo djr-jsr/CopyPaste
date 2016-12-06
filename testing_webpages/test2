@@ -1,0 +1,25 @@
+<!--in this webpage cut copy paste is disabled-->
+
+<html>
+  <head>
+    <title>Test2-CopyPaste</title>
+  </head>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function () {
+		//whenever we try to cut, copy or paste from/on the webpage this part is executed, and false is returned, hence diabling the funcionality
+	    $("body").bind("cut copy paste",function(e){
+	        alert("This funtionality is disabled");
+	        return false;
+	    });  
+	});
+	</script>
+
+
+
+
+  <body>
+  	Enter Text: <input type="text" name="inputbox"/>
+
+  </body>
+</html>
