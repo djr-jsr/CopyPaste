@@ -1,16 +1,19 @@
-// content.js
-// console.log("Hi");
-// chrome.runtime.onMessage.addListener(
-  // function(request, sender, sendResponse) {
-  	// document.body.style.backgroundColor="green";
-  	document.addEventListener("paste", function (event) {
-	    event.stopPropagation();
-	}, true);
-	document.addEventListener("copy", function (event) {
-	    event.stopPropagation();
-	}, true);
-	document.addEventListener("cut", function (event) {
-	    event.stopPropagation();
-	}, true);
-  // }
-// );
+//for re-enabling 'paste'
+document.addEventListener("paste", function (event) {
+    event.stopPropagation();
+}, true);
+
+//for re-enabling 'copy'
+document.addEventListener("copy", function (event) {
+    event.stopPropagation();
+}, true);
+
+//for re-enabling 'cut'
+document.addEventListener("cut", function (event) {
+    event.stopPropagation();
+}, true);
+
+//for re-enabling 'right-clicks'
+document.addEventListener("contextmenu", function(event){
+    event.stopPropagation();
+}, true);
