@@ -7,7 +7,7 @@
   <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
     <script type="text/javascript">
 	$(document).ready(function () {
-		//contextmenu event is fired when we right click on the page. In this script we disable this funtionality
+		//whenever we try to cut, copy or paste from/on the webpage this part is executed, and false is returned, hence diabling the funcionality
 	    $("body").bind("cut copy paste",function(e){
 	        alert("This funtionality is disabled");
 	        return false;
