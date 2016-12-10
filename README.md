@@ -9,3 +9,4 @@ Fiddles for testing the extension
 
 - [ Right Click is disabled ] (https://jsfiddle.net/3xwy52yx/)
 - [ Cut, Copy and Paste disabled (Method 1) ] (https://jsfiddle.net/dytxxp9u/)
+- [ Cut, Copy and Paste disabled (Method 2) ] (https://jsfiddle.net/zeg8f6vL/1/)

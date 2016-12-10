@@ -1,0 +1,25 @@
+<!--in this webpage right click is disabled-->
+
+<html>
+  <head>
+    <title>Test1-CopyPaste</title>
+  </head>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function () {
+      //whenever the page notices a right click, this funtion is fired, hence disabling the right clicks
+	    $("body").on("contextmenu",function(e){
+	        alert("This funtionality is disabled");
+	        return false;
+	    });  
+	});
+	</script>
+
+
+
+
+  <body>
+  	Enter Text: <input type="text" name="inputbox"/>
+
+  </body>
+</html>
