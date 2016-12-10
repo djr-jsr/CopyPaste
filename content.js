@@ -17,3 +17,8 @@ document.addEventListener("cut", function (event) {
 document.addEventListener("contextmenu", function(event){
     event.stopPropagation();
 }, true);
+
+//for disabling the keydown events attached to the DOM
+document.addEventListener("keydown", function(event){
+    event.stopPropagation();
+}, true);
