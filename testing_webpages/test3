@@ -1,0 +1,51 @@
+<!--in this webpage click events (ctrl+c, ctrl+x, ctrl+v) are disabled-->
+
+<html>
+  <head>
+    <title>Test1-CopyPaste</title>
+  </head>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+  <script type="text/javascript">
+	
+  $(document).ready(function () {
+      
+      //context menu(the menu which you see after a right click on the webpage) is disabled
+      $(document).bind('contextmenu', function(e) {
+        alert('This funtionality is disabled');
+        e.preventDefault();
+      });
+
+      //the below function is called whenever a keypress is noted over any part of the page
+      $( "body" ).keydown(function(evt) {
+          //evt.keyCode returns the javascript keyCode of the keypressed
+          var c = evt.keyCode;
+          var ctrlDown = evt.ctrlKey;
+
+          // Check for Alt+Gr (http://en.wikipedia.org/wiki/AltGr_key)
+          if (ctrlDown && evt.altKey) return true;
+
+          // Check for ctrl+c, v and x
+          else if (ctrlDown && c==67) return false; // c
+          else if (ctrlDown && c==86) return false; // v
+          else if (ctrlDown && c==88) return false; // x
+
+          // Otherwise allow
+          return true;
+       });
+
+  });
+
+
+
+
+  
+	</script>
+
+
+
+
+  <body>
+  	Enter Text: <input type="text" name="inputbox"/>
+
+  </body>
+</html>
