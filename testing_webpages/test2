@@ -1,0 +1,25 @@
+<!--in this webpage cut copy paste is disabled-->
+
+<html>
+  <head>
+    <title>Test2-CopyPaste</title>
+  </head>
+  <script type="text/javascript" src="jquery-3.1.0.min.js"></script>
+    <script type="text/javascript">
+	$(document).ready(function () {
+		//contextmenu event is fired when we right click on the page. In this script we disable this funtionality
+	    $("body").bind("cut copy paste",function(e){
+	        alert("This funtionality is disabled");
+	        return false;
+	    });  
+	});
+	</script>
+
+
+
+
+  <body>
+  	Enter Text: <input type="text" name="inputbox"/>
+
+  </body>
+</html>
