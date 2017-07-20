@@ -12,9 +12,6 @@ document.addEventListener("paste", function (event) {
 document.addEventListener("copy", function (event) {
     event.stopPropagation();
 }, true);
-document.addEventListener("copy", function (event) {
-    event.stopPropagation();
-}, true);
 
 //for re-enabling 'cut'
 document.addEventListener("cut", function (event) {
